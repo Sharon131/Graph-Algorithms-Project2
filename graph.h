@@ -12,7 +12,14 @@ struct graph{
     int vertices_no;
 };
 
+struct graph_value{
+    int edge_to;
+    int min_weight;
+    int max_weight;
+};
+
 typedef struct graph graph;
+typedef struct graph_value graph_value;
 
 void graphInit(graph* new_graph, int vertices_no);
 graph* graphAddEdge(graph* Graph, int from, int to, int min_weight, int max_weight);

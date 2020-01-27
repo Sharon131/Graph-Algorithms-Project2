@@ -11,6 +11,7 @@ struct list{
     int value;
     int min_weight;
     int max_weight;
+    void* val;
     struct list* next;
 };
 
